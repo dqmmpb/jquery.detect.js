@@ -1,6 +1,6 @@
 {
   "name": "jquery.detect.js",
-  "version": "3.1.0",
+  "version": "1.0.0",
   "main": "dist/js/jquery.detect.js",
   "ignore": [
     "**/.*",

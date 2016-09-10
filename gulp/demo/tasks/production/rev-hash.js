@@ -11,7 +11,7 @@ gulp.task('demo:rev-hash:js', () => {
 
   browserSync.notify('Rev replace');
 
-  var jsfilter = $.filter(config.production.jsfilter, {restore: true});
+  var jsfilter = $.filter(config.production.jsfilter, {restore: false});
 
   return gulp.src(config.production.src)
     .pipe(jsfilter)
@@ -23,7 +23,7 @@ gulp.task('demo:rev-hash:css', () => {
 
   browserSync.notify('Rev replace');
 
-  var cssfilter = $.filter(config.production.cssfilter, {restore: true});
+  var cssfilter = $.filter(config.production.cssfilter, {restore: false});
 
   return gulp.src(config.production.src)
     .pipe(cssfilter)
@@ -35,7 +35,7 @@ gulp.task('demo:rev-hash:html', () => {
 
   browserSync.notify('Rev replace');
 
-  var nojscssfilter = $.filter(config.production.nojscssfilter, {restore: true});
+  var nojscssfilter = $.filter(config.production.nojscssfilter, {restore: false});
 
   return gulp.src(config.production.src)
     .pipe(nojscssfilter)

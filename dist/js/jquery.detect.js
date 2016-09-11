@@ -45,9 +45,9 @@
       qq: /QQ[\/]{0,1}([\d.]+)/i,
       weibo: /WeiBo[\/]{0,1}([\d.]+)/i,
       uc: /UCBrowser[\/]{0,1}([\d.]+)/i,
-      alipay: /AliApp\(AP[\/]{0,1}([\d.]+\))/i,
-      taobao: /AliApp\(TB[\/]{0,1}([\d.]+\))/i,
-      dingtalk: /AliApp\(DingTalk[\/]{0,1}([\d.]+\))/i,
+      alipay: /AliApp\(AP[\/]{0,1}([\d.]+)\)/i,
+      taobao: /AliApp\(TB[\/]{0,1}([\d.]+)\)/i,
+      dingtalk: /AliApp\(DingTalk[\/]{0,1}([\d.]+)\)/i,
       xmdd: /XMDD[\/]{0,1}([\d.]+)/i
     };
 

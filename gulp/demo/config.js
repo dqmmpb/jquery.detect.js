@@ -12,9 +12,7 @@ var distAssets        = 'demo/dist/assets';
 var rev               = 'demo/rev';
 
 module.exports = {
-  project: {
-    project
-  },
+  project: project,
   browsersync: {
     development: {
       server: {

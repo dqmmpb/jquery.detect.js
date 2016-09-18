@@ -5,9 +5,7 @@ var build             = 'build';
 var tar               = 'tar';
 
 module.exports = {
-  project: {
-    project
-  },
+  project: project,
   browsersync: {
     development: {
       server: {

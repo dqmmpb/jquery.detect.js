@@ -45,3 +45,13 @@ or
   
   $.detectFun(cusAppRegExp);
 ```
+
+
+### 样例
+```text
+  AliApp(TB/5.11.0)
+  AliApp(AP/9.9.2.083030)
+  AliApp(DingTalk/2.15.0)
+  UCBrowser/11.0.6.831
+  XMDD/3.3.0
+```

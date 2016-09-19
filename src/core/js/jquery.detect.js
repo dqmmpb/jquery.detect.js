@@ -43,12 +43,15 @@
     var defaultAppRegExp = {
       wechat: /MicroMessenger[\/]{0,1}([\d.]+)/i,
       qq: /QQ[\/]{0,1}([\d.]+)/i,
-      weibo: /WeiBo[\/]{0,1}([\d.]+)/i,
+      weibo: /WeiBo(?:(?:__)?[\/]?){0,1}([\d.]+)/i,
       uc: /UCBrowser[\/]{0,1}([\d.]+)/i,
       alipay: /AliApp\(AP[\/]{0,1}([\d.]+)\)/i,
       taobao: /AliApp\(TB[\/]{0,1}([\d.]+)\)/i,
       dingtalk: /AliApp\(DingTalk[\/]{0,1}([\d.]+)\)/i,
-      xmdd: /XMDD[\/]{0,1}([\d.]+)/i
+      xmdd: /(?:XmddApp\()?Xmdd[\/]{0,1}([\d.]+)(?:\))?/i, //兼容旧版本
+      xmddmarket: /(?:XmddApp\()?XmddMarket[\/]{0,1}([\d.]+)(?:\))?/i,
+      xmddshop: /(?:XmddApp\()?XmddShop[\/]{0,1}([\d.]+)(?:\))?/i,
+      xmhzproxy: /(?:XmddApp\()?XmhzProxy[\/]{0,1}([\d.]+)(?:\))?/i
     };
 
     // extend RegExp of apps

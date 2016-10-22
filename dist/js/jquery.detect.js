@@ -38,8 +38,8 @@
 
     /**
      * default RegExp of all apps
-     * @type {{wechat: RegExp, qq: RegExp, weibo: RegExp, uc: RegExp, alipay: RegExp, taobao: RegExp, dingtalk: RegExp, xmdd: RegExp}}
-     */
+     * @type {{wechat: RegExp, qq: RegExp, weibo: RegExp, uc: RegExp, alipay: RegExp, taobao: RegExp, dingtalk: RegExp, xmddapp: RegExp, xmdd: RegExp, xmddmarket: RegExp, xmddshop: RegExp, xmhzproxy: RegExp}}
+       */
     var defaultAppRegExp = {
       wechat: /MicroMessenger[\/]{0,1}([\d.]+)/i,
       qq: /QQ[\/]{0,1}([\d.]+)/i,
@@ -48,6 +48,7 @@
       alipay: /AliApp\(AP[\/]{0,1}([\d.]+)\)/i,
       taobao: /AliApp\(TB[\/]{0,1}([\d.]+)\)/i,
       dingtalk: /AliApp\(DingTalk[\/]{0,1}([\d.]+)\)/i,
+      xmddapp: /(?:(?:XmddApp\()(?:\w+)|(?:Xmdd))+[\/]{0,1}([\d.]+)(?:\))?/i, //兼容旧版本
       xmdd: /(?:XmddApp\()?Xmdd[\/]{0,1}([\d.]+)(?:\))?/i, //兼容旧版本
       xmddmarket: /(?:XmddApp\()?XmddMarket[\/]{0,1}([\d.]+)(?:\))?/i,
       xmddshop: /(?:XmddApp\()?XmddShop[\/]{0,1}([\d.]+)(?:\))?/i,

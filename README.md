@@ -34,6 +34,7 @@ or
   alipay 支付宝
   taobao 淘宝
   dingtalk 钉钉
+  xmddapp 小马达达APP系列
   xmdd 小马达达
   xmddmarket 小马达达市场版
   xmddshop 小马达达商户版
@@ -43,6 +44,7 @@ or
 ### 同时也支持自定义的App正则表达式匹配，调用方式
 ```javascript
   var cusAppRegExp = {
+    xmddapp: /(?:(?:XmddApp\()(?:\w+)|(?:Xmdd))+[\/]{0,1}([\d.]+)(?:\))?/i, //兼容旧版本
     xmdd: /XMDD[\/]{0,1}([\d.]+)/i
   };
   
